@@ -108,6 +108,8 @@ main {
   padding: 16px 24px;
 }
 
+
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -198,3 +200,258 @@ main {
   left: 50%;
   cursor: pointer;
 }
+
+.crm {
+  font-family: "questrial";
+  display: flex;
+  padding: 94px;
+  gap: 24px;
+
+}
+
+.box-line {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.line {
+  background: linear-gradient(#FFFFFF, #D9D9D9, #FFFFFF);
+  width: 1.5px;
+  height: 1152px;
+}
+
+.multiplayer-line {
+  height: 1730px;
+}
+
+.data-line {
+  height: 1730px;
+}
+
+.crm-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.crm-main h2 {
+  color: var(--main-black);
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1.2px;
+}
+
+.crm-main p {
+  color: var(--main-black);
+  font-weight: 400px;
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  line-height: 32px;
+}
+
+.crm-quote {
+  font-family: "inter";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  gap: 24px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.crm-quote img {
+  width: 44px;
+  height: 44px;
+}
+
+.crm-quote h3 {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: #31373D;
+  font-weight: 400;
+
+}
+
+.crm-quote .quote-text {
+  margin: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+
+
+.data-workflows {
+  font-family: "questrial";
+  display: flex;
+  padding: 94px;
+  gap: 24px;
+}
+
+.workflows-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.workflows-main h2 {
+  color: var(--main-black);
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1.2px;
+}
+
+.workflows-main p {
+  color: var(--main-black);
+  font-weight: 400px;
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  line-height: 32px;
+}
+
+.workflows-quote {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: space-between;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.workflows-quote img {
+  width: 44px;
+  height: 44px;
+}
+
+.workflows-quote h3 {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: #31373D;
+  font-weight: 400;
+}
+
+.workflows-quote .quote-text {
+  margin: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+
+.first-img {
+  border: 5px solid #EDEEF0;
+  border-radius: 20px;
+}
+
+.multiplayer {
+  padding: 94px;
+  display: flex;
+  gap: 24px;
+}
+
+.multiplayer-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.multiplayer-main h2 {
+  color: var(--main-black);
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1.2px;
+}
+
+.multiplayer-main p {
+  color: var(--main-black);
+  font-weight: 400px;
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  line-height: 32px;
+}
+
+.multiplayer-img-container {
+  display: flex;
+  gap: 28px;
+}
+
+.multiplayer-quote {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  align-content: space-between;
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.multiplayer-quote img {
+  width: 44px;
+  height: 44px;
+}
+
+.multiplayer-quote h3 {
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  color: #31373D;
+  font-weight: 400;
+}
+
+.multiplayer-quote .quote-text {
+  margin: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+
+.scale {
+  font-family: "questrial";
+  display: flex;
+  padding: 116px;
+
+  
+}
+
+.scale-wrapper {
+  display: flex;
+  border: 1px solid #EDEEF0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.scale-security {
+  display: flex;
+  flex-direction: column;
+  padding: 56px 155px 56px 64px; 
+}
+
+.scale-security h3 {
+  color: var(--main-black);
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.8px;
+  margin-bottom: 6px;
+}
+
+.scale-security p {
+  color: var(--main-black);
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  line-height: 28px;
+  font-family: "inter";
+  margin-bottom: 24px;
+  font-weight: 400px;
+}
+
+.scale-security span {
+  color: #9098A0;
+}
+
+
