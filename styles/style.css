@@ -21,6 +21,7 @@ body {
 :root {
   --main-black: #1d1f20;
   --base: #ffffff;
+  --footer: #232529;
 }
 
 header {
@@ -104,11 +105,10 @@ button {
 
 main {
   margin: 0 auto;
-  max-width: 1440px;
-  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 .hero {
   display: flex;
@@ -206,7 +206,6 @@ main {
   display: flex;
   padding: 94px;
   gap: 24px;
-
 }
 
 .box-line {
@@ -216,10 +215,8 @@ main {
   align-items: center;
 }
 
-
-
 .line {
-  background: linear-gradient(#FFFFFF, #D9D9D9, #FFFFFF);
+  background: linear-gradient(#ffffff, #d9d9d9, #ffffff);
   width: 1.5px;
   height: 1152px;
 }
@@ -273,9 +270,8 @@ main {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: -0.3px;
-  color: #31373D;
+  color: #31373d;
   font-weight: 400;
-
 }
 
 .crm-quote .quote-text {
@@ -284,7 +280,6 @@ main {
   line-height: 20px;
   letter-spacing: -0.1px;
 }
-
 
 .data-workflows {
   font-family: "questrial";
@@ -333,7 +328,7 @@ main {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: -0.3px;
-  color: #31373D;
+  color: #31373d;
   font-weight: 400;
 }
 
@@ -345,7 +340,7 @@ main {
 }
 
 .first-img {
-  border: 5px solid #EDEEF0;
+  border: 5px solid #edeef0;
   border-radius: 20px;
 }
 
@@ -400,7 +395,7 @@ main {
   font-size: 22px;
   line-height: 32px;
   letter-spacing: -0.3px;
-  color: #31373D;
+  color: #31373d;
   font-weight: 400;
 }
 
@@ -415,13 +410,11 @@ main {
   font-family: "questrial";
   display: flex;
   padding: 116px;
-
-  
 }
 
 .scale-wrapper {
   display: flex;
-  border: 1px solid #EDEEF0;
+  border: 1px solid #edeef0;
   justify-content: space-between;
   align-items: center;
 }
@@ -429,7 +422,7 @@ main {
 .scale-security {
   display: flex;
   flex-direction: column;
-  padding: 56px 155px 56px 64px; 
+  padding: 56px 155px 56px 64px;
 }
 
 .scale-security h3 {
@@ -451,7 +444,102 @@ main {
 }
 
 .scale-security span {
-  color: #9098A0;
+  color: #9098a0;
+}
+
+.much-more {
+  background-color: var(--footer);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "inter";
+}
+
+.mm-wrapper {
+  max-width: 1440px;
+  display: flex;
+  padding: 116px 94px;
+  flex-direction: column;
+}
+
+.mm-wrapper h2 {
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1.2px;
+  color: #9098a0;
+  font-weight: 400px;
+  margin-bottom: 16px;
+}
+
+.mm-wrapper span {
+  color: #ffffff;
+}
+
+.mm-wrapper p {
+  color: #9098a0;
+  font-weight: 300px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  margin-bottom: 64px;
+}
+
+.much-more-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  max-width: 1252px;
+}
+
+
+.dream-crm {
+  background-color: #266DF0;
+  width: 100%;
+  font-family: "questrial";
+  display: flex;
+  justify-content: center;
+}
+
+.dream-crm-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  padding: 0 94px;
+  padding-right: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crm-left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.crm-left h2 {
+  color: #579CF7;
+  font-size: 52px;
+  line-height: 58px;
+  letter-spacing: -1.2px;
+  font-weight: 600;
+}
+
+.crm-left span {
+  color: white;
+}
+
+.crm-left button {
+  background-color: #538BF3;
+  padding: 12px 16px;
+  color: white;
+  border: none;
+}
+
+.crm-left .crm-dream-special {
+  background-color: #266DF0;
+  border: 1px solid #538BF3;
 }
 
 
