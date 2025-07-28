@@ -7,33 +7,42 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="pop-up" id="pop-up">
-        <p>We've raised a $23.5m Series A led by Redpoint Ventures!</p>
-        <a href="#" class="pop-up-link">Read more</a>
+        <p>
+          We've raised a $23.5m Series A led by Redpoint Ventures!
+          <a href="#" class="pop-up-link">Read more</a>
+        </p>
+
         <img src="assets/vectors/cancel.svg" alt="close" id="close" />
       </div>
       <nav>
-        <ul>
+        <div class="list-logo-wrapper">
           <img src="assets/vectors/logo.svg" alt="logo" class="logo" />
-          <li><a href="#">Customer</a></li>
-          <li><a href="#">Changelog</a></li>
-          <li><a href="#">Help</a></li>
-          <li class="special">
-            <a href="#">Careers</a>
-            <img src="assets/vectors/careers-count.svg" alt="number" />
-          </li>
-          <li><a href="#">Pricing</a></li>
-        </ul>
+          <ul>
+            <li><a href="#">Customer</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="special">
+              <a href="#">Careers</a>
+              <img src="assets/vectors/careers-count.svg" alt="number" />
+            </li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
         <div class="sign-ups">
           <button class="sign-in">Sign in</button>
           <button class="start-free">Start for free</button>
+        </div>
+        <div class="burger">
+          <div class="burger-menu"></div>
+          <div class="burger-menu"></div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="section">
         <div class="anouncement">
           <p>
             <span>New</span>How Pallet uses Attio to power their GTM
@@ -49,11 +58,11 @@
           to build the exact CRM your business needs.
         </p>
         <div class="hero-btns">
-          <button class="hero-start-btn">Start for free</button>
-          <button class="hero-sales-btn">Talk to sales</button>
+          <button class="hero-start-btn" hero-btn>Start for free</button>
+          <button class="hero-sales-btn" hero-btn>Talk to sales</button>
         </div>
       </section>
-      <section class="video-section">
+      <section class="video-section" id="section">
         <img
           src="assets/images/Container.png"
           alt="presentation"
@@ -61,7 +70,7 @@
         />
         <img src="assets/vectors/play-button.svg" alt="play" class="play" />
       </section>
-      <section class="conveyer-logos">
+      <section class="conveyer-logos" id="section">
         <div class="logos-wrapper">
           <img
             src="assets/vectors/cocacola-logo.svg"
@@ -122,13 +131,13 @@
           />
         </div>
       </section>
-      <section class="crm">
+      <section class="crm" id="section">
         <div class="box-line">
           <img src="assets/vectors/Box.svg" alt="box" />
           <div class="line"></div>
         </div>
         <div class="crm-main">
-          <h2>A CRM created <br />to be your own.</h2>
+          <h2>A CRM created to be your own.</h2>
           <p>
             Tweak anything and everything to ensure Attio fits <br />
             your business, not the other way around.
@@ -148,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section class="data-workflows">
+      <section class="data-workflows" id="section">
         <div class="box-line">
           <img src="assets/vectors/Box.svg" alt="box" />
           <div class="line data-line"></div>
@@ -167,7 +176,10 @@
             alt="content"
             class="first-img"
           />
-          <img src="assets/images/workflows-2.png" alt="content" />
+          <div class="data-img-container">
+            <img src="assets/images/workflows-2.png" alt="content" />
+            <img src="assets/images/workflows-3.png" alt="content" />
+          </div>
 
           <div class="workflows-quote">
             <img src="assets/vectors/avatar-2.svg" alt="avatar" />
@@ -184,24 +196,27 @@
           </div>
         </div>
       </section>
-      <section class="multiplayer">
+      <section class="multiplayer" id="section">
         <div class="box-line">
           <img src="assets/vectors/Box.svg" alt="box" />
           <div class="line multiplayer-line"></div>
         </div>
         <div class="multiplayer-main">
           <h2>
-            Modeled around your <br />
-            data and workflows.
+            Designed for <br />
+            multiplayer.
           </h2>
           <p>
-            A CRM should go beyond deals. Attio is <br />
-            built for any business process.
+            The first trully multiplayer CRM. After all, the best work doesn’t
+            come from silos.
           </p>
-          <img src="assets/images/multiplayer-1.png" alt="content" />
           <div class="multiplayer-img-container">
+            <img src="assets/images/multiplayer-1.png" alt="content" />
             <img src="assets/images/multiplayer-2.png" alt="content" />
+          </div>
+          <div class="multiplayer-img-container">
             <img src="assets/images/multiplayer-3.png" alt="content" />
+            <img src="assets/images/multiplayer-4.png" alt="content" />
           </div>
 
           <div class="multiplayer-quote">
@@ -219,7 +234,7 @@
           </div>
         </div>
       </section>
-      <section class="scale">
+      <section class="scale" id="section">
         <div class="scale-wrapper">
           <div class="scale-security">
             <h3>Scale with <span>security</span></h3>
@@ -237,7 +252,7 @@
           </div>
         </div>
       </section>
-      <section class="much-more">
+      <section class="much-more" id="section">
         <div class="mm-wrapper">
           <h2>And so <span>much more</span></h2>
           <p>
@@ -254,7 +269,7 @@
           </div>
         </div>
       </section>
-      <section class="dream-crm">
+      <section class="dream-crm" id="section">
         <div class="dream-crm-wrapper">
           <div class="crm-left">
             <h2>
@@ -272,7 +287,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer id="footer">
       <div class="footer-wrapper">
         <img
           src="assets/vectors/logo-white.svg"
