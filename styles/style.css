@@ -104,6 +104,38 @@ nav ul a {
   height: 4px;
   border-radius: 2.5px;
   background-color: #1d1f20;
+  z-index: 10001;
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--footer);
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-nav a {
+  color: var(--base);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.burger-active {
+  right: -50%;
+}
+
+#header .burger-menu-white {
+  background-color: var(--base);
 }
 
 button {
@@ -657,14 +689,11 @@ main {
   font-family: "inter";
   align-items: center;
   position: relative;
-  
 }
 
 .loved-by-container {
   display: flex;
   gap: 24px;
-
-  
 }
 
 .loved-by-wrapper {
@@ -776,15 +805,25 @@ main {
   flex-direction: column;
   max-height: 700px;
   overflow-y: scroll;
- 
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0) 95%
+  );
 }
 
 .load-more-btn {
   position: absolute;
-  bottom: 0;
+  top: -25%;
   left: 35%;
-
-
+  display: none;
+  background-color: var(--footer);
+  border: 1px solid #31373d;
+  color: var(--base);
+  padding: 10px 26px;
+  cursor: pointer;
 }
 
 .dream-crm {
@@ -793,6 +832,7 @@ main {
   font-family: "questrial";
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .dream-crm-wrapper {
@@ -810,7 +850,6 @@ main {
   flex-direction: column;
   gap: 32px;
   width: 100%;
-  
 }
 
 .crm-left h2 {
@@ -857,6 +896,10 @@ footer {
   position: absolute;
   top: 64px;
   left: 94px;
+}
+
+.footer-mobile-links {
+  display: none;
 }
 
 .footer-wrapper a {
@@ -949,6 +992,29 @@ footer {
   position: absolute;
   right: 24px;
   bottom: 24px;
+  cursor: pointer;
+}
+
+.footer-mobile-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 24px 20px 24px;
+}
+
+.footer-mobile-li {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222529;
+  color: #979ca1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
   cursor: pointer;
 }
 
@@ -1244,7 +1310,6 @@ footer {
     padding: 60px 24px;
     max-width: none;
     margin: 0 auto;
-   
   }
 
   .loved-by-container {
@@ -1272,7 +1337,10 @@ footer {
     display: flex;
     flex-direction: column;
     width: 100%;
-    
+  }
+
+  .load-more-btn {
+    display: block;
   }
 
   .crm {
@@ -1295,16 +1363,69 @@ footer {
   .dream-crm-wrapper img {
     width: 346px;
     height: 280px;
-    
   }
 
   .dream-crm-wrapper button {
     width: 100%;
+    margin-bottom: 12px;
   }
 
   .crm-left h2 {
     font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.5px;
+  }
+
+  .footer-ul-wrapper {
+    display: none;
+  }
+
+  .footer-buttons {
+    display: none;
+  }
+
+  .footer-wrapper {
+    padding: 60px 24px;
+    border: none;
+  }
+
+  .footer-logo {
+    top: 40px;
+    left: 24px;
+  }
+
+  .footer-mobile-links {
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    top: 48px;
+    right: 24px;
+    gap: 12px;
+  }
+
+  .copyright-logos .footer-links-desktop {
+    display: none;
+  }
+
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .copyright p {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.1px;
+    color: #555e67;
+  }
+
+  .footer-mobile-li {
+    display: flex;
+  }
+
+  .mobile-nav {
+    display: flex;
   }
 }

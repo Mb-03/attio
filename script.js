@@ -13,4 +13,11 @@ const swiper = new Swiper(".my-swiper", {
   },
 });
 
-console.log(swiper)
+const burgerMenu = document.querySelector("#burger");
+const mobileMenu = document.querySelector("#mobile-nav");
+const burgerSpan = document.querySelector(".burger-menu");
+
+burgerMenu.addEventListener("click", () => {
+  mobileMenu.classList.toggle("burger-active");
+  burgerSpan.classList.toggle("burger-menu-white");
+});
